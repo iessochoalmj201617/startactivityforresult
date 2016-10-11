@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StartActivityForResult</string>
+    <string name="main.nombre">Nombre</string>
+    <string name="main.apellido">Apellidos</string>
+</resources>
