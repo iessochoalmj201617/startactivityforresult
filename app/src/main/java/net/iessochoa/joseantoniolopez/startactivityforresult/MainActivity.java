@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * Este ejemplo nos permitirá aprender como podemos llamar a una activity
+ * y obtener datos de la misma.
+ */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     //Estas constantes nos permitirán distiguir para qué llamamos la actividad EntradaDatos
     //en el evento onActivityResult
@@ -30,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_Nombre=(TextView) findViewById(R.id.tv_Nombre);
         tv_Apellido=(TextView) findViewById(R.id.tv_Apellido);
 
-        //Manejaremos el evento del botón en el mismo Listener
+        //Manejaremos el evento del botón en el mismo Listener. Para ello fijaros como la activity implementa View.OnClickListener
         ((Button)findViewById(R.id.btn_Nombre)).setOnClickListener(this);
         ((Button)findViewById(R.id.btn_Apellido)).setOnClickListener(this);
 
