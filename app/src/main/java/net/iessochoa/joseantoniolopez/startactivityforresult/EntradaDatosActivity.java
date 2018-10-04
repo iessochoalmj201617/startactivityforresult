@@ -11,6 +11,9 @@ public class EntradaDatosActivity extends AppCompatActivity implements View.OnCl
     //Constantes para identificar los valores Extra que se envían a la actividad EntradaDatos
     //Es constumbre identificarlas mediante el nombre del paquete
     public final static String EXTRA_DATOS_RESULTADO ="net.iessochoa.joseantoniolopez.startactivityforresult.entradadatosactivity.datos";
+    //Constantes para identificar los valores Extra que se envían a la actividad EntradaDatos
+    //Es constumbre identificarlas mediante el nombre del paquete
+    public final static String EXTRA_DATOS="net.iessochoa.joseantoniolopez.startactivityforresult.entradadatosactivity.datos";
     EditText et_datos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +27,7 @@ public class EntradaDatosActivity extends AppCompatActivity implements View.OnCl
         ((Button)findViewById(R.id.btn_Cancel)).setOnClickListener(this);
 
         //obtenemos el valor de la actividad llamadora y lo mostraremos
-        et_datos.setText(getIntent().getStringExtra(MainActivity.EXTRA_DATOS));
+        et_datos.setText(getIntent().getStringExtra(EXTRA_DATOS));
     }
 
     @Override

@@ -12,12 +12,12 @@
     tools:context="net.iessochoa.joseantoniolopez.startactivityforresult.EntradaDatosActivity">
 
     <EditText
+        android:id="@+id/et_datos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
         android:ems="10"
-        android:id="@+id/et_datos" />
+        android:hint="@string/introduce_un_valor"
+        android:inputType="textPersonName" />
 
     <LinearLayout
         android:orientation="horizontal"

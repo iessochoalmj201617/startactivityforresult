@@ -23,7 +23,7 @@
             android:id="@+id/btn_Nombre" />
 
         <TextView
-            android:text="@string/main.nombre"
+            android:text="@string/nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_Nombre" />
@@ -36,14 +36,14 @@
         android:layout_height="match_parent">
 
         <Button
-            android:text="Apellido"
+            android:text="@string/apellido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn_Apellido"
            />
 
         <TextView
-            android:text="@string/main.apellido"
+            android:text="@string/apellido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_Apellido"

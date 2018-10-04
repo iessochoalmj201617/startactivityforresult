@@ -17,10 +17,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public final static int OPTION_REQUEST_NOMBRE=0;
     public final static int OPTION_REQUEST_APELLIDO=1;
 
-    //Constantes para identificar los valores Extra que se envían a la actividad EntradaDatos
-    //Es constumbre identificarlas mediante el nombre del paquete
-    public final static String EXTRA_DATOS="net.iessochoa.joseantoniolopez.startactivityforresult.main.datos";
-
 
     TextView tv_Nombre;
     TextView tv_Apellido;
@@ -52,14 +48,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.btn_Nombre:
                 //enviamos el nombre actual
-                i.putExtra(EXTRA_DATOS,tv_Nombre.getText().toString());
+                i.putExtra(EntradaDatosActivity.EXTRA_DATOS,tv_Nombre.getText().toString());
                 //llamamos a la actividad a la espera de recibir el resultado
                 //indicando el código de llamada
                 startActivityForResult(i,OPTION_REQUEST_NOMBRE);
                 break;
             case R.id.btn_Apellido:
                 //enviamos el apellido actual
-                i.putExtra(EXTRA_DATOS,tv_Apellido.getText().toString());
+                i.putExtra(EntradaDatosActivity.EXTRA_DATOS,tv_Apellido.getText().toString());
                 //llamamos a la actividad a la espera de recibir el resultado
                 //indicando el código de llamada
                 startActivityForResult(i,OPTION_REQUEST_APELLIDO);
