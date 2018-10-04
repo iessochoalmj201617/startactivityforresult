@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
+//fijaros que la actividad implementa el lintener del click de los botones
 public class EntradaDatosActivity extends AppCompatActivity implements View.OnClickListener {
     //Constantes para identificar los valores Extra que se envían a la actividad EntradaDatos
     //Es constumbre identificarlas mediante el nombre del paquete
@@ -30,13 +30,17 @@ public class EntradaDatosActivity extends AppCompatActivity implements View.OnCl
         et_datos.setText(getIntent().getStringExtra(EXTRA_DATOS));
     }
 
+    /**
+     * Este método implementa el evento de los botones ok y cancel
+     * @param view
+     */
     @Override
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.btn_Ok:
                 // Si el EditText no está vacío enviamos el resultado
                 if(et_datos.getText().length()!=0) {
-                    //guardamos el resultado en el Intent que llamó la actividad, autque
+                    //guardamos el resultado en el Intent que llamó la actividad, aunque
                     //podríamos crear uno nuevo
                     Intent iBack = getIntent();
 
@@ -52,6 +56,7 @@ public class EntradaDatosActivity extends AppCompatActivity implements View.OnCl
                 setResult(RESULT_CANCELED);
                 //cerramos la actividad
                 finish();
+                //si el usuario pulsa el botón de back también se devuelve Canceled
                 break;
         }
     }
