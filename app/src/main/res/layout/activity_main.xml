@@ -17,13 +17,13 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:text="Nombre"
+            android:text="@string/nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn_Nombre" />
 
         <TextView
-            android:text="@string/nombre"
+            android:text=""
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_Nombre" />
@@ -43,7 +43,7 @@
            />
 
         <TextView
-            android:text="@string/apellido"
+            android:text=""
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_Apellido"

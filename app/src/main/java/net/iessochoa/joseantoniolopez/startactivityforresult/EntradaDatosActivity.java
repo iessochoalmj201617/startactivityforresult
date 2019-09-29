@@ -1,11 +1,12 @@
 package net.iessochoa.joseantoniolopez.startactivityforresult;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import androidx.appcompat.app.AppCompatActivity;
+
 //fijaros que la actividad implementa el lintener del click de los botones
 public class EntradaDatosActivity extends AppCompatActivity implements View.OnClickListener {
     //Constantes para identificar los valores Extra que se envían a la actividad EntradaDatos
