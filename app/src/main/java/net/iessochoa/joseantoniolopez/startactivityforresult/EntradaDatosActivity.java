@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class EntradaDatosActivity extends AppCompatActivity implements View.OnClickListener {
     //Constantes para identificar los valores Extra que se envían a la actividad EntradaDatos
     //Es constumbre identificarlas mediante el nombre del paquete
-    public final static String EXTRA_DATOS_RESULTADO ="net.iessochoa.joseantoniolopez.startactivityforresult.entradadatosactivity.datos";
+    public final static String EXTRA_DATOS_RESULTADO ="net.iessochoa.joseantoniolopez.startactivityforresult.entradadatosactivity.resultado";
     //Constantes para identificar los valores Extra que se envían a la actividad EntradaDatos
     //Es constumbre identificarlas mediante el nombre del paquete
     public final static String EXTRA_DATOS="net.iessochoa.joseantoniolopez.startactivityforresult.entradadatosactivity.datos";
