@@ -21,11 +21,11 @@ public class EntradaDatosActivity extends AppCompatActivity implements View.OnCl
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entrada_datos);
 
-        et_datos=(EditText) findViewById(R.id.et_datos);
+        et_datos= findViewById(R.id.et_datos);
 
         //Manejaremos el evento del botón en el mismo Listener
-        ((Button)findViewById(R.id.btn_Ok)).setOnClickListener(this);
-        ((Button)findViewById(R.id.btn_Cancel)).setOnClickListener(this);
+        findViewById(R.id.btn_Ok).setOnClickListener(this);
+        findViewById(R.id.btn_Cancel).setOnClickListener(this);
 
         //obtenemos el valor de la actividad llamadora y lo mostraremos
         et_datos.setText(getIntent().getStringExtra(EXTRA_DATOS));

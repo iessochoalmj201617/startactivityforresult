@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Practica3StartActivityForResult.iml" filepath="$PROJECT_DIR$/.idea/modules/Practica3StartActivityForResult.iml" group="Practica3StartActivityForResult" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Practica3StartActivityForResult/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Practica3StartActivityForResult.iml" filepath="$PROJECT_DIR$/.idea/modules/Practica3StartActivityForResult.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Practica3StartActivityForResult.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Practica3StartActivityForResult.app.iml" />
     </modules>
   </component>
 </project>
